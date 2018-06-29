@@ -3,9 +3,8 @@
 #include <windowsx.h>
 #include <commctrl.h>
 
-HICON GetShortcutIcon(INT iIcon, INT cx, INT cy)
+HICON GetShortcutIcon(INT iIcon, INT cx, INT cy, COLORREF crMask = RGB(255, 0, 255))
 {
-    const COLORREF crMask = RGB(255, 0, 255);
     const INT iShortcut = 30;
     HDC hDC;
     HICON hNewIcon = NULL;
